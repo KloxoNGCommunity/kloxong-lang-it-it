@@ -1,13 +1,13 @@
 %define kloxo /usr/local/lxlabs/kloxo/httpdocs/lang
-%define productname kloxong-lang
+%define productname kloxo-lang
 %define packagename it-it
 %define sourcename it-it
 %define timestamp 2013031825
 
 Name: %{productname}-%{packagename}
-Summary: Kloxo-MR IT-IT language
+Summary: Kloxo IT-IT language
 Version: 6.5.0.f
-Release: 1.kng%{?dist}
+Release: 2.kng%{?dist}
 License: GPL
 Group: Applications/Internet
 
@@ -19,7 +19,7 @@ BuildArch: noarch
 Obsoletes: kloxomr-lang-it-it
 
 %description
-Kloxo-NG PL-PL language
+Kloxo PL-PL language
 
 %prep
 %setup -q -n %{name}-%{version}-%{timestamp}
@@ -39,6 +39,9 @@ Kloxo-NG PL-PL language
 %{kloxo}/%{packagename}
 
 %changelog
+* Wed Jun 19 2024 John Parnell Pierce <john@luckytanuki.com>
+- Change product name back to Kloxo
+
 * Mon Jan 29 2018 John Parnell Pierce <john@luckytanuki.com> 
 - change product name to kloxong
 - add obsolete for kloxomr 
